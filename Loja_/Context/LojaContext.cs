@@ -10,5 +10,6 @@ namespace Loja_.Context
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Compra> Compras { get; set; }
         public DbSet<CartaoCredito> cartaoCreditos { get; set; }
+        public DbSet<Pagamento> pagamentos { get; set; }
     }
 }
