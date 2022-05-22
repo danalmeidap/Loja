@@ -10,6 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Loja_.Context;
+using Loja_.Models.Entitys;
+using Microsoft.EntityFrameworkCore;
 
 namespace Loja_
 {
@@ -27,6 +30,15 @@ namespace Loja_
         {
 
             services.AddControllers();
+            services.AddDbContext<LojaContext>(options =>
+            {
+
+                options.UseNpgsql(Configuration.GetConnectionString("Default"));
+
+            }
+               );
+
+            services.AddScoped<ProdutoRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Loja_", Version = "v1" });
