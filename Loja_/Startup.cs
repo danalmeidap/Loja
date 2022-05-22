@@ -39,6 +39,8 @@ namespace Loja_
                );
 
             services.AddScoped<ProdutoRepository>();
+            services.AddScoped<CompraRepository>();
+            services.AddScoped<CartaoCreditoRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Loja_", Version = "v1" });

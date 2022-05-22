@@ -8,5 +8,7 @@ namespace Loja_.Context
         public LojaContext(DbContextOptions<LojaContext> options) : base(options)
         { }
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Compra> Compras { get; set; }
+        public DbSet<CartaoCredito> cartaoCreditos { get; set; }
     }
 }
