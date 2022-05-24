@@ -7,7 +7,7 @@
     <li> <a href="https://docs.microsoft.com/pt-br/dotnet/csharp/">C#</a></li>
     <li> <a href="https://docs.microsoft.com/pt-br/ef/">Entity Framework</a></li>
     <li> <a href="https://www.npgsql.org/efcore/">Npgsql</a></li>
-    <li> <a href="http://pgdocptbr.sourceforge.net/">Npgsql</a></li>
+    <li> <a href="http://pgdocptbr.sourceforge.net/">PostgreSQL</a></li>
 </ul>
 
 ## Features
